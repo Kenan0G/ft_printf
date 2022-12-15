@@ -6,7 +6,7 @@
 /*   By: kgezgin <kgezgin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/21 13:50:46 by kgezgin           #+#    #+#             */
-/*   Updated: 2022/12/12 17:45:33 by kgezgin          ###   ########.fr       */
+/*   Updated: 2022/12/15 16:23:22 by kgezgin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,16 +52,4 @@ int	ft_printf(const char *format, ...)
 	}
 	va_end(arg);
 	return (lst.len);
-}
-
-
-int main(void)
-{
-	int d;
-	void *p;
-	d = 1;
-	p = &d;
-	ft_printf("[%p]\n", p);
-	printf("[%p]\n", p);
-	return (0);
 }
